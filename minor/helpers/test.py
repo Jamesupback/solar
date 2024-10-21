@@ -3,8 +3,8 @@ from datetime import datetime
 
 # Input and output file paths
 input_file = './tester.txt'
-output_file1 = './output_columns/date.csv'
-output_file2 = './output_columns/energy_production.csv'
+output_file1 = '../output_columns/date.csv'
+output_file2 = '../output_columns/energy_production.csv'
 
 # Read the input file
 with open(input_file, 'r') as infile:

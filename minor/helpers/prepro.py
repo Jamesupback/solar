@@ -1,7 +1,12 @@
 import pandas as pd
 
-# Load the CSV file
-df = pd.read_csv('./combined.csv')
+# Load the CSV file with specified data types
+df = pd.read_csv('./combined.csv', dtype={
+    'humidity': float,
+    'solar_irradiance': float,
+    'temperature': float,
+    'energy_production': float
+}, parse_dates=['date'])
 
 # Drop rows with any null values
 df.dropna(inplace=True)

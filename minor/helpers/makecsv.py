@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Directory containing the CSV files
-directory = './output_columns'
+directory = '../output_columns'
 
 # List of CSV files to combine
 csv_files = ['date.csv','energy_production.csv']
